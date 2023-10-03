@@ -1,0 +1,234 @@
+*{
+    margin:  auto;
+    padding: 0;
+    font-family: Arial, Helvelica, sans-serif;
+    
+}
+
+#container {
+    width: 85%;
+    align-items:center;
+}
+
+header {
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+}
+
+header #logo {
+    width: 70%;
+}
+
+#iconMenu {
+    display: none;
+}
+
+header #logo img {
+    width: 100%;
+}
+
+
+
+header #menu {
+    width:40%;
+}
+
+header #menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+header #menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#content {
+    display: flex;
+    margin-top: 40px;
+}
+
+#content #info {
+    width: 65%;
+    height: 80%;
+}
+#content #barral {
+    width: 20%;
+    background: #ffd5bf;
+    color: black;
+    padding: 7px;
+    align:center;
+    margin-top:40px;
+}
+
+#cards .card {
+
+    margin-bottom: 40px;
+
+
+}
+
+.card h3 {
+
+    margin-bottom: 20px;
+}
+
+#content #info #banner img {
+    width: 100%;
+}
+
+
+#info #texts {
+    display: flex;
+    margin-top: 20px;
+}
+
+#texts h1 {
+    width: 40%;
+    font-size: 45px;
+}
+#content #texts p{
+    margin-top:2px;
+}
+
+#texts #descripcion {
+    width: 55%;
+}
+
+#descripcion p {
+    margin-bottom: 40px;
+}
+
+#descripcion input,#descripcion #boton{
+    border: none;
+    padding: 15px 20px;
+    background: #7d5349;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+
+footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+footer .tarjeta {
+    display: flex;
+}
+
+.tarjeta .infopie{
+       display: flex;
+    margin:20px;
+    align-items:center;
+}
+.tarjeta .infopie h3{
+    margin:5px;
+}
+.tarjeta .infopie h6{
+    margin:5px;
+    display:block;
+    align-items:center;
+}
+.tarjeta .infopie img {
+    width: 20%;
+    display:block;
+}
+
+
+/* DISEÑO RESPONSIVE */
+
+@media(max-width:480px) {
+    header #menu {
+        background: #8a4b45;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 1000px;
+        display: none;
+        
+        
+    }
+
+    header #menu ul {
+        margin-top: 80px;
+        flex-direction: column;
+
+    }
+
+    header #menu ul li {
+        margin: 20px auto;
+    }
+
+    header #logo {
+        width: 100%;
+
+    }
+
+    header #logo img {
+        width: 10%;
+    }
+
+    #iconMenu {
+        width: 10%;
+        z-index: 20;
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+    }
+
+    #content {
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    #content #info {
+        width: 100%;
+    }
+
+    #content #barral {
+        width: 90%;
+    }
+
+    #info #texts {
+        flex-direction: column;
+
+
+    }
+
+    #texts h1 {
+        width: 100%;
+    }
+
+    #texts #descripcion {
+        width: 100%;
+    }
+
+
+    footer .tarjeta {
+        flex-direction: column;
+    }
+    
+    #content #info {
+    width: 100%;
+}
+#content #barral {
+    width: 100%;    
+}
+.tarjeta .infopie{
+   margin-bottom: 30px;
+}
+}
+
+
+/* .tarjeta.infopie{
+    
+} */
